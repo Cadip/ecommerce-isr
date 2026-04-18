@@ -1,7 +1,7 @@
 import { supabase } from '@/lib/supabase'
 import { MetadataRoute } from 'next'
 
-const BASE_URL = 'https://ecommerce-isr.vercel.app/'
+const BASE_URL = 'https://ecommerce-isr.vercel.app'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const { data: products } = await supabase
