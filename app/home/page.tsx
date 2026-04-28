@@ -7,6 +7,10 @@ import { Product } from '@/types/product'
 export const dynamic = 'force-static'
 export const revalidate = 60
 
+export const metadata = {
+    alternates: { canonical: '/home' },
+};
+
 export default async function HomePage() {
     const { data: products, error } = await supabase
         .from('products')
