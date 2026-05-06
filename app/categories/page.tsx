@@ -14,6 +14,10 @@ export async function generateStaticParams() {
     }))
 }
 
+export const metadata = {
+    alternates: { canonical: '/categories' },
+}
+
 const categories = [
     { name: 'Automotive', image: 'automotive.jpg' },
     { name: 'Beauty', image: 'beauty.jpg' },
